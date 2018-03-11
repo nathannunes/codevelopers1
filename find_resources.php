@@ -34,6 +34,7 @@
                     <li ><a href="index.php">HOME</a></li>
                      <li><a href="project_request.php">PROJECT REQUEST</a></li>
                     <li><a href="blogs.php">BLOGS</a> </li>
+                     <li><a href="community.html">OUR COMMUNITY</a></li>
                      <li><a href="find_resources.php">RESOURCES</a></li>
                    <!-- <li><a href="#faculty-sec">ABOUT US</a></li> -->
                     <li><a href="about_us.php">ABOUT US</a></li>
