@@ -178,7 +178,7 @@ else
     </div>
     
      <div id="faculty-sec" >
-    <div class="container-fluid">
+    <div class="container-fluid set-pad" >
              <div class="row text-center">
                  <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
                      <h1 data-scroll-reveal="enter from the bottom after 0.1s" class="header-line">PROJECT REQUEST</h1>

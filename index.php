@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Coder's Club</title>
+    <title>Coders' Club</title>
     
     <style type="text/css">
      #blue-btn{
@@ -52,6 +52,7 @@
                      <li><a href="project_request.php">PROJECT REQUEST</a></li>
                     <li><a href="blogs.php">BLOGS</a> </li>
                      <li><a href="find_resources.php">RESOURCES</a></li>
+                    <li><a href="community.html">OUR COMMUNITY</a></li>
                    <!-- <li><a href="#faculty-sec">ABOUT US</a></li> -->
                     <li><a href="about_us.php">ABOUT US</a></li>
                      <li><a href="report_bugs.php">REPORT BUGS</a></li>
@@ -86,7 +87,7 @@
                     <ul class="slides move-me">
                         <!-- Slider 01 -->
                         <li>
-                             <h1>CODER'S CLUB</h1>
+                             <h1>CODERS' CLUB</h1>
                            <h3>WE HELP USERS UNDERSTAND AND TAKE CONTROL OF THEIR TECHNOLOGY</h3>
                              
                            
@@ -103,8 +104,8 @@
                         
                         <!-- Slider 03 -->
                         <li>
-                            <h1>INNOVATIVE</H1>
-                           <h3>AT CODER'S CLUB INNOVATION MEETS SKILLS</h3>
+                            <h1>INNOVATION</H1>
+                           <h3>AT CODERS' CLUB, INNOVATION MEETS SKILLS</h3>
                             
                         </li>
                         <!-- End Slider 03 -->
@@ -128,7 +129,7 @@
            
                <div class="col-lg-12  col-md-12 col-sm-12">
                
-        <h2 data-scroll-reveal="enter from the bottom after 0.1s" ><i class="fa fa-circle-o-notch"></i> WELCOME TO CODER'S CLUB<i class="fa fa-circle-o-notch"></i> </h2>
+        <h2 data-scroll-reveal="enter from the bottom after 0.1s" ><i class="fa fa-circle-o-notch"></i> WELCOME TO CODERS' CLUB<i class="fa fa-circle-o-notch"></i> </h2>
                    </div>
                </div>
              </div>
