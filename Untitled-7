@@ -1,0 +1,18 @@
+  <div class='col-lg-6  col-md-6 col-sm-6' data-scroll-reveal='enter from the bottom after 0.5s>
+                  <form id='loginForm' method='POST' action='login_validation'>
+                        <div class="form-group">
+                           <label for='email'>Email-ID</label>
+			                                <input class='form-control' type='text' name='email' size='35' required='true'><br>
+                        </div>
+                        <div class='form-group'>
+                            <label for='password' style='padding-top:5px'>Password</label>
+	            		                    <input class='form-control' type='password' name='password' size='35' required='true'><br>
+                        </div>
+                       
+                        <div class='form-group'>
+                            <input type='submit' name='login_validation' value='Login' class='btn btn-info btn-set'> <br>
+	            		                    <a href='signup.php' id='signup_link'>Sign up</a>
+                        </div>
+
+                    </form>
+                </div>

@@ -178,7 +178,7 @@ else
     </div>
     
      <div id="faculty-sec" >
-    <div class="container set-pad">
+    <div class="container-fluid">
              <div class="row text-center">
                  <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
                      <h1 data-scroll-reveal="enter from the bottom after 0.1s" class="header-line">PROJECT REQUEST</h1>
@@ -195,7 +195,8 @@ else
                         <div class="row set-row-pad"  data-scroll-reveal="enter from the bottom after 0.5s" >
            
                
-                 <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
+                 <div class="col-lg-12 col-md-12 col-sm-12 ">
+                     
                    <form id="project_request_form" method="POST" action="pr_submit.php">
                         <div class="form-group">
                             <input class="form-control" type="text" name="name" required="true" placeholder="Enter Your Name" value="<?=$name?>">
@@ -216,7 +217,7 @@ else
                             <label>Project Type </label>
         					<select required="true" name="project_type">
         		              <option value="" disabled selected="selected">Select Project Type</option>
-        		              <option value="software">Software</option>
+                                <li><option value="software">Software</option></li>  
         		              <option value="hardware">Hardware</option>
         		              <option value="iot">IOT (Internet of Things)</option>
         		              <option value="other">Other</option>

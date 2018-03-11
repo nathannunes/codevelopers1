@@ -15,12 +15,7 @@ if(isset($_SESSION['rn']) && isset($_SESSION['eid']))
     <html lang="en">
 
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <link rel="icon" href="">
-          <meta charset="utf-8" />
+         <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta name="description" content="" />
     <meta name="author" content="" />
@@ -35,6 +30,7 @@ if(isset($_SESSION['rn']) && isset($_SESSION['eid']))
     <link href="assets/css/style.css" rel="stylesheet" />    
   <!-- Google	Fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css' />
+</head>
         
         <script>
             function validateForm() {
@@ -187,70 +183,84 @@ if(isset($_SESSION['rn']) && isset($_SESSION['eid']))
         </div>
     </div>
             
-             <div id="faculty-sec" >
-    <div class="container set-pad">
-             <div class="row text-center">
-                 <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
-                     <h1 data-scroll-reveal="enter from the bottom after 0.1s" class="header-line">SIGN UP</h1>
-                     <p data-scroll-reveal="enter from the bottom after 0.3s">
-                     </p>
-                     
-                     <form id="signup_form" name="signup_form" action="signup_validation.php" method="post" onsubmit="return validateForm()">
-                                    <h2></h2>
-                                    <label>Roll Number</label>
-                                    <input id="rollno" type="text" name="roll_no" placeholder="Roll Number" required="true">
-                                    <br>
-                                    <label>First Name</label>
-                                    <input id="firstname" type="text" name="first_name" placeholder="First Name" required="true">
-                                    <br>
-                                    <label>Last Name</label>
-                                    <input id="lastname" type="text" name="last_name" placeholder="Last Name" required="true">
-                                    <br>
-                                    <label>Gender</label>
-                                    <div class=row>
-                                        <div class="col-md-6">
-                                            <input id=gender type="radio" name="gender" value="male" checked> Male
-                                        </div>
-                                        <div class="col-md-6">
-                                            <input id="gender" type="radio" name="gender" value="female"> Female
-                                        </div>
-                                    </div>
-                                    <br>
-                                    <label>Role</label>
-                                    <select name='role' id='role' required='true'>
+           
+              <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12" data-scroll-reveal="enter from the bottom after 0.3s">
+                                <h3>SIGN UP</h3>
+                    
+                           <div class="row set-row-pad"  data-scroll-reveal="enter from the bottom after 0.5s">
+           
+               
+                 <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
+                   <form id="signup_form" name="signup_form" action="signup_validation.php" method="post" onsubmit="return validateForm()">
+                        <div class="form-group">
+                            <label>Roll Number</label>
+                                    <input id="rollno" class="form-control" type="text" name="roll_no" placeholder="Roll Number" required="true">
+                        </div>
+                        <div class="form-group">
+                            <label>First Name</label>
+                                    <input id="firstname"  class="form-control" type="text" name="first_name" placeholder="First Name" required="true">
+                        </div>
+                         <div class="form-group">
+                            <label>Last Name</label>
+                                    <input id="lastname"  class="form-control" type="text" name="last_name" placeholder="Last Name" required="true">
+                        </div>
+                         <div class="form-group">
+                             <label>Gender</label>
+                                    <select name='gender'  class="form-control" id='gender' required='true'>
+                                        <option value=''disabled='true' size='30'>---Select your GENDER---</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                    </select> 
+                        </div>
+                         <div class="form-group">
+                             <label>Role</label>
+                            <select name='role' class="form-control" id='role' required='true'>
                                         <option value=''disabled='true' size='30'>---Select your Role---</option>
                                         <option value="developer">Developer</option>
                                         <option value="tester">Tester</option>
                                     </select> 
-                                    <br>
-                                    <label>E-mail</label>
-                                    <input id="email" type="email" name="email" placeholder="Email" required="true">
-                                    <br>
-                                    <label>Password</label>
-                                    <input id="password" type="password" name="password" placeholder="Password" required="true" minlength="8">
-                                    <br>
-                                    <label>Confirm Password</label>
-                                    <input id="cnf-password" type="password" name="conf_password" placeholder="Confirm Password" required="true" minlength="8">
-                                    <br><br>
-                                    <div class="form-group">
-                                        <input type="submit" name="signup" value="Sign Up">                                    
-                                    </div>
-                                   
-                                </form>
-                 </div>
-                  
-        </div>
-                 </div>
+                        </div>
+                        <div class="form-group">
+                            <label>E-mail</label>
+                                    <input id="email" class="form-control" type="email" name="email" placeholder="Email" required="true">
+                        </div>
+                       
+                        <div class="form-group">
+                             <label>Password</label>
+                                    <input id="password" class="form-control" type="password" name="password" placeholder="Password" required="true" minlength="8">
+          
+                        </div>
+                       
+                       <div class="form-group">
+                        <label>Confirm Password</label>
+                                    <input id="cnf-password" class="form-control" type="password" name="conf_password" placeholder="Confirm Password" required="true" minlength="8">
+                       </div>
+                        <div class="form-group">
+                             <input type="submit" class="btn btn-info btn-block btn-lg" name="signup" value="Sign Up"> 
+                        </div>
+
+                    </form>
+                </div>
+                        </div>
+                </div>
+                  </div>
             </div>
             
-                         
+            
+                  
                          
                          
                          
 
             <!--end of container-fluid-->
             <!-----------FOOTER------------>
-          <div class="container">
+       
+     <!-- CONTACT SECTION END-->
+     <!-- CONTACT SECTION END-->
+    <div id="footer">
+            <div class="container">
              <div class="row set-row-pad"  >
     <div class="col-lg-4 col-md-4 col-sm-4   col-lg-offset-1 col-md-offset-1 col-sm-offset-1 " data-scroll-reveal="enter from the bottom after 0.4s">
 
@@ -279,10 +289,6 @@ if(isset($_SESSION['rn']) && isset($_SESSION['eid']))
 
                 </div>
                  </div>
-     <!-- CONTACT SECTION END-->
-     <!-- CONTACT SECTION END-->
-    <div id="footer">
-         
     </div>
      <!-- FOOTER SECTION END-->
    

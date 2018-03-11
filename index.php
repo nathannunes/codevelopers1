@@ -10,6 +10,19 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>Coder's Club</title>
+    
+    <style type="text/css">
+     #blue-btn{
+            background: none repeat scroll 0 0 #0cbbfc;
+            border:1px solid #0cbbfc;
+            border-radius:5px;
+            color: white;
+            font-weight: 400;
+            padding: 0.8em 0.9em;
+            display: block;
+            margin:0.8em 0em;
+        
+    </style>
     <!-- BOOTSTRAP CORE STYLE CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <!-- FONT AWESOME CSS -->
@@ -122,7 +135,7 @@
         
     </div>
     <!--HOME SECTION TAG LINE END-->   
-         <div id="resources-sec" class="container set-pad" >
+         <div id="resources-sec" class="container-fluid" >
              <div class="row text-center">
                  <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
                      <p data-scroll-reveal="enter from the bottom after 0.3s" >
@@ -138,29 +151,34 @@
            
                
                  <div class="col-lg-6  col-md-6 col-sm-6" data-scroll-reveal="enter from the bottom after 0.4s">
+                     
                      <div class="about-div">
-                      <i class="fa fa-paper-plane-o fa-4x icon-round-border" ></i>
+                      <i class='fa fa-paper-plane-o fa-4x icon-round-border' ></i>
                     <?php
         				if(!isset($_SESSION['rn']))
         				{
         					echo("
 
-        						<div class='row login'>
-        						
-        							<div class='col-lg-4 col-md-4 col-sm-4' data-scroll-reveal='enter from the bottom after 0.5s'>
-        								<form id='loginForm' method='POST' action='login_validation'>
-	        								<h2>Login</h2>
-	        								<label for='email'>Email-ID</label>
-			                                <input class='input' type='text' name='email' size='35' required='true'><br>
-	    		                            <label for='password' style='padding-top:5px'>Password</label>
-	            		                    <input class='input' type='password' name='password' size='35' required='true'><br>
-                                             </form> <br>
-	            		                    <input type='submit' name='login_validation' value='Login' class='btn btn-info btn-set'> <br>
-	            		                    <a href='signup.php' id='signup_link'>Sign up</a>
-	            		               
-        							</div>
-        							
-        						</div>
+        						  <div class='col-lg-12 col-md-12 col-sm-12' data-scroll-reveal='enter from the bottom after 0.5s>
+                                  
+                  <form id='loginForm' method='POST' action='login_validation'>
+                        <div class='form-group'>
+                           <label for='email'>Email-ID</label>
+			                                <input class='form-control' type='text' name='email' size='35' required='true'>
+                        </div>
+                        <div class='form-group'>
+                            <label for='password' style='padding-top:5px'>Password</label>
+	            		                    <input class='form-control' type='password' name='password' size='35' required='true'>
+                        </div>
+                       
+                        <div class='form-group'>
+                            <input type='submit'  id='blue-btn' name='login_validation' value='Login' class='btn btn-lg'> 
+	            		                   <a href='signup.php' class='btn btn-warning' id='signup_link'>Sign up</a> 
+                        </div>
+
+                    </form>
+                </div>
+
         						");
         				}
         				else
@@ -178,11 +196,11 @@
                  <div class="col-lg-6  col-md-6 col-sm-6" data-scroll-reveal="enter from the bottom after 0.6s">
                      <div class="about-div">
                      <i class="fa fa-magic fa-4x icon-round-border" ></i>
-                   <h3 >GOT ANY COOL IDEAS</h3>
+                   <h3 >GOT ANY COOL IDEAS?</h3>
                  <hr />
                        <hr />
-		                    <p></p>Submit your ideas or project requirements and we'll get back to you !</p>
-               <a href="project_request.php" class="btn btn-info btn-set"  >SUBMIT</a>
+		                    <p><h4>Submit your ideas or project requirements and we'll get back to you !</h4></p>
+               <a href="project_request.php" id="blue-btn"><center>SUBMIT</center></a>
                 </div>
                    </div>
                  
@@ -293,7 +311,11 @@
              </div>
       <!-- COURSES SECTION END-->
   
-    <div class="container">
+    
+     <!-- CONTACT SECTION END-->
+     <!-- CONTACT SECTION END-->
+    <div id="footer">
+         <div class="container">
              <div class="row set-row-pad"  >
     <div class="col-lg-4 col-md-4 col-sm-4   col-lg-offset-1 col-md-offset-1 col-sm-offset-1 " data-scroll-reveal="enter from the bottom after 0.4s">
 
@@ -322,10 +344,6 @@
 
                 </div>
                  </div>
-     <!-- CONTACT SECTION END-->
-     <!-- CONTACT SECTION END-->
-    <div id="footer">
-         
     </div>
      <!-- FOOTER SECTION END-->
    
